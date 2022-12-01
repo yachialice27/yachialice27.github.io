@@ -20,7 +20,7 @@ d3.csv("./data/dept.csv", function(data) {
 
 // Add X axis
 var x = d3.scaleLinear()
-.domain([84000, 106000])
+.domain([84000, 104000])
 .range([ 0, width]);
 dept_viz.append("g")
 .attr("transform", "translate(0," + height + ")")
@@ -95,7 +95,7 @@ d3.csv("./data/jobtitle.csv", function(data) {
 
 // Add X axis
 var x = d3.scaleLinear()
-.domain([75000, 130000])
+.domain([75000, 110000])
 .range([ 0, width]);
 job_viz.append("g")
 .attr("transform", "translate(0," + height + ")")
@@ -170,7 +170,7 @@ d3.csv("./data/education.csv", function(data) {
 
 // Add X axis
 var x = d3.scaleLinear()
-.domain([84000, 106000])
+.domain([84000, 104000])
 .range([ 0, width]);
 edu_viz.append("g")
 .attr("transform", "translate(0," + height + ")")
