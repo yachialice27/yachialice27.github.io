@@ -7,17 +7,49 @@
     <title>Gender Analysis</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <main>
-        <h1>Hello!</h1>  
+    <div>
+        <h1>Gender Analysis</h1>  
         <!-- Create a div where the graph will take place -->
-        <div id="dept"></div>
-        <div id="job_title"></div>
-        <div id="education"></div>
-    </main>
+        <br>
+        <br>
+        <p>The pay gap between men and women continues to plague our nation. 
+            Despite having the same skills and putting in the same amount of effort, the work done by women 
+            is seen as less valuable and more dispensable. As a result, women are being paid less than their 
+            male counterparts across different Jobs, Industries and Education levels. On average, women earn 
+            83% of what men earn.  Lesser pay throughout their life leads to lesser retirement savings and 
+            decreased financial independence which triggers a series of other societal issues.</p>
+
+        <p>Across all major industries such as Administration, Engineering and Sales, women are paid 
+            significantly lesser than men. More specifically, there are some jobs such as Data Scientist
+                and Graphic Designer where women are paid marginally more than men. However, 
+                in more male dominated jobs such as Software Engineer and IT, men tend to paid much more 
+                than women. 
+        </p>
+        <br>
+        <br>
+        <div id = "dept_and_job" class = "container">
+            <div id="dept" class = "container"></div>
+            <div id="job_title" class = "container"></div>
+        </div>
+        <br>
+        <br>
+        <p>Not only that, unfortunately, women who have earned PHDs earn lesser than men with undergraduate 
+            or masters degrees! Thus, the wage gap cannot be explained by the difference in the education 
+            of workers. These are stark facts that need to be acted upon with urgency, as at this rate it 
+            will take us 90 years to close the wage gap, and we cannot afford to wait this long. Women not 
+            only need to be motivated to enter male dominated fields, but also be paid well and equally to 
+            ensure gender equity.
+        </p>
+        <br>
+        <br>
+        <div id="education" class = "container"></div>
+    </div>
     <!-- Load d3.js -->
     <script src="https://d3js.org/d3.v4.js"></script>
 	<script src="shreya.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>

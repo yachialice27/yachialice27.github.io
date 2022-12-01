@@ -1,6 +1,6 @@
 // *****Dept*****
 // set the dimensions and margins of the graph
-var margin = {top: 10, right: 100, bottom: 30, left: 100},
+var margin = {top: 10, right: 0, bottom: 30, left: 100},
     width = 900 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -20,7 +20,7 @@ d3.csv("./data/dept.csv", function(data) {
 
 // Add X axis
 var x = d3.scaleLinear()
-.domain([80000, 106000])
+.domain([84000, 106000])
 .range([ 0, width]);
 dept_viz.append("g")
 .attr("transform", "translate(0," + height + ")")
@@ -170,7 +170,7 @@ d3.csv("./data/education.csv", function(data) {
 
 // Add X axis
 var x = d3.scaleLinear()
-.domain([80000, 106000])
+.domain([84000, 106000])
 .range([ 0, width]);
 edu_viz.append("g")
 .attr("transform", "translate(0," + height + ")")
