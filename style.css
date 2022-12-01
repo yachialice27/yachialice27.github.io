@@ -1,15 +1,9 @@
-#dept_and_job {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    justify-content: space-around;
-}
-
 html {
     margin: auto;
     text-align: center;
     display: flex;
     justify-content: center;
+    width: 80%;
 }
 
 body {
