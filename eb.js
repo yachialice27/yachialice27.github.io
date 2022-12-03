@@ -1,4 +1,4 @@
-ebexcel = FileAttachment("eb-data@1.xlsx").xlsx()
+ebexcel = FileAttachment("eb-data@xlsx").xlsx()
 headers = ebexcel.sheet(0, {headers: true})
 Plot.plot({
     marks: [
