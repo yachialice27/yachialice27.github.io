@@ -12,3 +12,34 @@ body {
     display: flex;
     justify-content: center;
 }
+
+p {
+    margin: 10px;
+}
+
+.world_map_title {
+    font-size: 15px;
+    font-weight: bold;
+    color: darkslateblue;
+}
+
+.country:hover{
+    fill: red;
+}
+
+.legendLinear{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.reference{
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.reference_items{
+    text-align: left;
+    padding: 5px;
+    width: 100%;
+}
