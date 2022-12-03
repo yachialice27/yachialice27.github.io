@@ -1,3 +1,5 @@
+key = Legend(chart.scales.color, {title: "Women's share of all STEM workers (%)"})
+
 chart = UsStateChoropleth(employment, {
     id: d => namemap.get(d.name),
     value: d => d.rate,
