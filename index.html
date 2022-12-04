@@ -13,7 +13,22 @@
         function myFunction() {
             ebexcel = FileAttachment("/data/eb-data@xlsx").xlsx();
             headers = ebexcel.sheet(0, {headers: true});
-            document.getElementById("demo").innerHTML = "Paragraph changed.";
+            Plot.plot({
+                marks: [
+                    Plot.dot(headers, {x: "Women", y: "Men", fill: "Year"})
+                ], 
+                color: {
+                    legend: true, 
+                    label: "Year Gender Wage Gap Will Be Closed"
+                }, 
+                x: {
+                    label: "% Women Working Part Time"
+                },
+                y: {
+                    label: "% Men Working Part Time"
+                },
+            })
+
         }
         </script>
 </head>
@@ -92,8 +107,7 @@
             closing slightly sooner (closer to 2050 than 2100) when the percentage of women working part time is lower, 
             or when the percentages of men and women working part time is equal. 
         </p> 
-        <p id="demo">A Paragraph.</p>
-        <button type="button" onclick="myFunction()">Try it</button>
+        
 
         <br>
         <br>
