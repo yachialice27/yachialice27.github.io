@@ -71,7 +71,7 @@
 
         <br>
         <br>
-        <!--
+        
         <p> This scatter plot first shows a state-by-state comparison of the percentages of men and women 
             who work part-time. Part-time work is fewer than 35 hours a week, and is often chosen by people 
             who have other responsibilities such as childcare. At the same time, this work comes with minimal 
@@ -106,9 +106,23 @@
                 },
                 })
         </script>
+    
+    <title>U.S. State Choropleth</title>
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+    <body>
+    <script type="module">
 
-        <p> This scatter plot first shows a state-by-state comparison of the percentages of men and women 
-        </p>-->
+    import define from "./index.js";
+    import {Runtime, Library, Inspector} from "./runtime.js";
+
+    const runtime = new Runtime();
+    const main = runtime.module(define, Inspector.into(document.body));
+
+    </script>
+
+        <p class="reference">References</p>
+        <p class="reference_items">[1] https://genderdata.worldbank.org/data-stories/flfp-data-story/#:~:text=Women%20are%20less%20likely%20to,compared%20to%2080%25%20for%20men.</p>
+    </div>
 
 
 
