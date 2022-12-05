@@ -32,7 +32,7 @@ UsStateChoropleth(employment, {
 )}
 
 function _employment(FileAttachment){return(
-FileAttachment("WomenInSTEM@5.csv").csv()
+d3.csv("./data/WomenInSTEM.csv")
 )}
 
 function _5(md){return(
