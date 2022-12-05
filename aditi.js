@@ -7,6 +7,15 @@ md`# U.S. State Choropleth
 Women in STEM occupations by state, 2013. Data: [Status of Women Data](https://statusofwomendata.org/explore-the-data/employment-and-earnings/additional-state-data/stem/)`
 )}
 
+chart = UsStateChoropleth(employment, {
+  id: d => namemap.get(d.name),
+  value: d => d.rate,
+  scale: d3.scaleQuantize,
+  domain: [24, 45],
+  range: d3.schemeBlues[7],
+  title: (f, d) => `${f.properties.name}\n${d?.rate}%`
+})
+
 function _key(Legend,chart){return(
 Legend(chart.scales.color, {title: "Women's share of all STEM workers (%)"})
 )}
