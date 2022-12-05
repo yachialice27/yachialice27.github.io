@@ -6,6 +6,11 @@ html {
     width: 80%;
 }
 
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 body {
     margin: auto;
     width: 80%;
@@ -21,6 +26,7 @@ p {
     font-size: 15px;
     font-weight: bold;
     color: darkslateblue;
+    text-align: center;
 }
 
 .country:hover{
@@ -42,4 +48,18 @@ p {
     text-align: left;
     padding: 5px;
     width: 100%;
+}
+
+.dept_title {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(29, 73, 34);
+    text-align: center;
+}
+
+.edu_title {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(29, 73, 34);
+    text-align: center;
 }
