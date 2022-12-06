@@ -12,17 +12,18 @@
 </head>
   <body>
     <div>
-        <h1>Visualizations and Analysis of Gender Inequalities in the Workplace</h1>  
-
-        <h2>Introduction</h2>
+        <br>
+        <br>
+        <h1>Gender Inequalities in the Workplace</h1>  
+        <br>
         <p>
             Both around the world and in the United States, women have made incredible steps towards equity in the workplace in the past century. However, inequality between men and women remains persistent, with factors such as education, familial expectations and ingrained sexism in society prohibiting women from achieving full equality. 
             The goal of our project is to display existing inequalities to make them clearer, both in the United States and around the world.
         </p>
         <!-- Create a div where the graph will take place -->
         <br>
+        <h2>Participation in the Labor Force</h2>
         <br>
-        <h2>Labor Force Participation for Women</h2>
         <p>
             The following world map shows the 16+ year-old labor force participation female to male ratio in the year 2021.
             Overall, women still has less labor participation than men in all most every country.
@@ -37,40 +38,46 @@
             In developed countries, women have more opportunities and are more encouraged to pursue the same work opportunities as men,
             but men still lead by around 10% participation.
         </p>
+        <br>
         <div id="world_map">
 
             <p class="world_map_title"> 2021 Labor Force Participation Rate by Gender (Female/Male)</p>
         </div>
         <br>
+        <br>
+        <br>
         <p> According to the National Science Foundation, women are greatly underrepresented in the workforce and only 
-            make up 29% of the science and engineering labor force. However, over the past fifty years, women have 
+            make up 29% of the science and engineering labor force [5]. However, over the past fifty years, women have 
             increasingly participated in the workforce leading to the breakdown of gender roles and the positive evolution 
-            of society. The gender gap in STEM is not due to differences in education but the masculine attitudes and cultures 
-            that exist in workplaces. Research has shown that external factors like cultures excluding women, persistent 
-            stereotypes, and a lack of role models reinforce gender inequities in STEM. Male-dominated culture incorporates 
-            unconscious biases such as gender stereotypes with STEM fields being viewed as masculine. These cultures are not 
-            supportive of women and minorities. This also results in fewer role models due to limited examples of female 
-            scientists and engineers. Additionally, hiring algorithms and automated resume scanners use large datasets that 
-            don't equally represent women or minorities. For example, search algorithms show higher paying jobs to men because 
-            the underlying data tells the tools that men earn more. If more women enter STEM professions, greater gender equality 
-            in society and income are inevitable since these occupations generally have higher wages. An increase in annual fiscal 
-            income may improve the socioeconomic status of women globally. Advancements in technology have stimulated the economy 
-            by progressing the STEM field and encouraging innovative ideas. Women should have equal access to opportunities in order 
-            to ensure individual success and increase background experience. Encouraging women to pursue STEM careers will create a 
-            more inclusive workforce. 
+            of society [4]. The graphs below show the percentages of women in employed in STEM fields per state and the 
+            progression of women in STEM over time. The gender gap in STEM is not due to differences in education but the 
+            masculine attitudes and cultures that exist in workplaces. Research has shown that external factors like cultures 
+            excluding women, persistent stereotypes, and a lack of role models reinforce gender inequities in STEM. 
+            Male-dominated culture incorporates unconscious biases such as gender stereotypes with STEM fields being viewed as 
+            masculine. These cultures are not supportive of women and minorities. This also results in fewer role models due to 
+            limited examples of female scientists and engineers. Additionally, hiring algorithms and automated resume scanners 
+            use large datasets that don't equally represent women or minorities. For example, search algorithms show higher paying 
+            jobs to men because the underlying data tells the tools that men earn more. If more women enter STEM professions, 
+            greater gender equality in society and income are inevitable since these occupations generally have higher wages. An 
+            increase in annual fiscal income may improve the socioeconomic status of women globally. Advancements in technology have 
+            stimulated the economy by progressing the STEM field and encouraging innovative ideas. Women should have equal access to 
+            opportunities in order to ensure individual success and increase background experience. Encouraging women to pursue STEM 
+            careers will create a more inclusive workforce. 
         </p>
+        <br>
+        <!--<img src="https://drive.google.com/file/d/1lE8-9y4Ya5PAZdJ3wx8vgK_TpvD5EjGB/view?usp=sharing">-->
+        <img src="USChloropleth.png">
+        <br>
+        <br>
 
-         <!--<img src="https://drive.google.com/file/d/1lE8-9y4Ya5PAZdJ3wx8vgK_TpvD5EjGB/view?usp=sharing">-->
-         <img src="USChloropleth.png">
-         <br>
-         <br>
-
-          <!--<img src="https://drive.google.com/file/d/1h1FFQYJX3dultWk4sWFLqTryAwg8_aBb/view?usp=sharing">-->
-         <img src="WomenInStem.png">
-         <br>
-         <br>
-
+        <!--<img src="https://drive.google.com/file/d/1h1FFQYJX3dultWk4sWFLqTryAwg8_aBb/view?usp=sharing">-->
+        <img src="WomenInStem.png">
+        <br>
+        <br>
+        <br>
+        <br>
         <h2>Pay Gap Differences</h2>
+        <br>
         <p>The pay gap between men and women continues to plague our nation. 
             Despite having the same skills and putting in the same amount of effort, the work done by women 
             is seen as less valuable and more dispensable. As a result, women are being paid less than their 
@@ -87,9 +94,9 @@
         <br>
         <br>
         <div id = "dept_and_job" class = "container">
-            <div id="dept" class = "container"></div>
-            <!--<div id="job_title" class = "container"></div>-->
-        </div>
+            <div id="dept" class = "container">
+                <p class="dept_title">Pay Gap across Industries(in $)</p>
+            </div>
         <br>
         <br>
         <br>
@@ -102,7 +109,9 @@
         </p>
         <br>
         <br>
-        <div id="education" class = "container"></div>
+        <div id="education" class = "container">
+            <p class="edu_title">Pay Gap on the basis of Education(in $)</p>
+        </div>
 
         <br>
         <br>
@@ -128,8 +137,15 @@
     </script>
 
         <p class="reference">References</p>
-        <p class="reference_items">[1] https://genderdata.worldbank.org/data-stories/flfp-data-story/#:~:text=Women%20are%20less%20likely%20to,compared%20to%2080%25%20for%20men.</p>
-        <p class="reference_items">[2] IWPR analysis of American Community Survey data</p>
+        <ol class="reference_items">
+            <li>https://genderdata.worldbank.org/data-stories/flfp-data-story/#:~:text=Women%20are%20less%20likely%20to,compared%20to%2080%25%20for%20men.</li>
+            <li>https://www.aauw.org/resources/research/simple-truth/</li>
+            <li>https://blog.dol.gov/2022/03/15/connecting-the-dots-womens-work-and-the-wage-gap/</li>
+	    <li>https://swe.org/research/2022/employment/</li>
+            <li>https://statusofwomendata.org/explore-the-data/employment-and-earnings/additional-state-data/stem/</li>
+            <li>https://iwpr.org/iwpr-publications/fact-sheet/the-economic-status-of-women-in-the-states/</li>    
+        </li>
+          </ol>
     </div>
 
     <!-- Load d3.js -->
