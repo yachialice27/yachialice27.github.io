@@ -71,8 +71,8 @@ d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json", function(topoJSON
               + "</br> Ratio: " + ratio.toFixed(2)
               + "</br> Female: " + parseFloat(name_female_male[countryName[d.id]][0]).toFixed(2) + "\%"
               + "</br> Male: " + parseFloat(name_female_male[countryName[d.id]][1]).toFixed(2) + "\%")
-          .style("left", (d3.mouse(this)[0]+100) + "px")
-          .style("top", (d3.mouse(this)[1]+100) + "px")
+          .style("left", (d3.mouse(this)[0]+200) + "px")
+          .style("top", (d3.mouse(this)[1]+400) + "px")
     };
     const mouseleave = function (d) {
       Tooltip
